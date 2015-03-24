@@ -28,4 +28,12 @@ GitHub software has been installed and will have to suffice for now.
 10:06   - scr_DEBUG now runs in the Draw event of objOVERLORD
         - the Press D-Key event of obj_OVERLORD sets variable debug to true/false
             - scr_DEBUG checks debug
+
+10:22   - Created spr_Test
+        - Created obj_Test
         
+10:28   - scr_CLICKNDRAG linked placed in Left Button event of obj_Test
+        - Tested obj_Test in room_Test
+            - Click & Drag functional
+            - Objects drop if moved too quickly
+            - Multiple instances function independantly
