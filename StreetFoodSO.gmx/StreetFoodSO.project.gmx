@@ -34,6 +34,7 @@
     <object>objects\obj_OVERLORD</object>
     <object>objects\obj_Test</object>
     <object>objects\obj_BtnMenu</object>
+    <object>objects\obj_BtnExit</object>
     <object>objects\obj_Menu</object>
     <object>objects\obj_Button</object>
   </objects>

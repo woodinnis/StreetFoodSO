@@ -60,3 +60,9 @@ GitHub software has been installed and will have to suffice for now.
 11:56   - obj_BtnMenu is now a child of obj_Button
             - obj_BtnMenu uses event_user() and Draw events
         - Clicking obj_BtnMenu in room_Menu moves to room_Test
+        
+13:04   - Created obj_BtnExit
+            - Standard button, returns to Main Menu
+
+13:13   - obj_BtnExit placed in room_Test
+        - Movement between rooms now possible            
