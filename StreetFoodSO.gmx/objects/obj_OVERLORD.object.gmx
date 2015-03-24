@@ -109,7 +109,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(debug == false)
+            <string>// Set debug to true/false for scr_DEBUG to check Debug status
+
+if(debug == false)
 {
     debug = true;
 }

@@ -23,5 +23,9 @@ GitHub software has been installed and will have to suffice for now.
 0:9:44  - Created scr_OVERLORD_Create
             - scr_OVERLORD_Create placed in a Create event in scr_OVERLORD
             
-09:51   - Create fnt_Test (Arial)            
+09:51   - Create fnt_Test (Arial)
+
+10:06   - scr_DEBUG now runs in the Draw event of objOVERLORD
+        - the Press D-Key event of obj_OVERLORD sets variable debug to true/false
+            - scr_DEBUG checks debug
         
