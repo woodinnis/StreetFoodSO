@@ -7,14 +7,21 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Test</sprite>
+    <sprite>sprites\spr_BtnTest</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\DevNotes.gml</script>
-    <script>scripts\scr_CLICKNDRAG.gml</script>
-    <script>scripts\scr_DEBUG.gml</script>
-    <script>scripts\scr_OVERLORD_Create.gml</script>
+    <scripts name="OVERLORD">
+      <script>scripts\scr_DEBUG.gml</script>
+      <script>scripts\scr_OVERLORD_Create.gml</script>
+    </scripts>
+    <scripts name="UI">
+      <script>scripts\scr_CLICKNDRAG.gml</script>
+      <script>scripts\scr_MenuDraw.gml</script>
+      <script>scripts\scr_MenuCreate.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_Test</font>
@@ -22,8 +29,11 @@
   <objects name="objects">
     <object>objects\obj_OVERLORD</object>
     <object>objects\obj_Test</object>
+    <object>objects\obj_MenuBtn</object>
+    <object>objects\obj_Menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_Menu</room>
     <room>rooms\room_Test</room>
   </rooms>
   <help>

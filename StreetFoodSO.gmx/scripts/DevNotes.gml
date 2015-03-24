@@ -37,3 +37,16 @@ GitHub software has been installed and will have to suffice for now.
             - Click & Drag functional
             - Objects drop if moved too quickly
             - Multiple instances function independantly
+            
+10:34   - Created room_Menu @ 800x600x30
+            - Will act as the first room in the game, and placeholder for all menus
+        - Marked obj_OVERLORD as Persistent
+        - Moved obj_OVERLORD to room_Menu
+            
+11:16   - Created obj_Menu
+        - Created obj_MenuBtn
+        - Created spr_BtnTest
+        - Created scr_MenuDraw
+            - Placed in the Draw event of obj_MenuBtn
+        - Created scr_MenuCreate
+            - Placed in the Create event of obj_Menu
