@@ -10,7 +10,12 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\DevNotes.gml</script>
+    <script>scripts\scr_CLICKNDRAG.gml</script>
+    <script>scripts\scr_DEBUG.gml</script>
   </scripts>
+  <objects name="objects">
+    <object>objects\obj_OVERLORD</object>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
