@@ -12,10 +12,17 @@
     <script>scripts\DevNotes.gml</script>
     <script>scripts\scr_CLICKNDRAG.gml</script>
     <script>scripts\scr_DEBUG.gml</script>
+    <script>scripts\scr_OVERLORD_Create.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_Test</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_OVERLORD</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\room_Test</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

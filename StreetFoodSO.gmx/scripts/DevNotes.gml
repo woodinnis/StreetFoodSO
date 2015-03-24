@@ -15,5 +15,13 @@ GitHub software has been installed and will have to suffice for now.
         - Created scr_DEBUG
             - scr_DEBUG has been placed in a press D-Key event in obj_OVERLORD
         - Created scr_CLICKNDRAG
-        
+
+09:32   - scr_CLICKNDRAG now includes basic mouse_down, and mouse.x/y logic
+        - Created room_Test @ 800x600x30
+            - Placed obj_OVERLORD, for testing purposes
+            
+0:9:44  - Created scr_OVERLORD_Create
+            - scr_OVERLORD_Create placed in a Create event in scr_OVERLORD
+            
+09:51   - Create fnt_Test (Arial)            
         
