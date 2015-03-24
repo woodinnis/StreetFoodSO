@@ -65,4 +65,17 @@ GitHub software has been installed and will have to suffice for now.
             - Standard button, returns to Main Menu
 
 13:13   - obj_BtnExit placed in room_Test
-        - Movement between rooms now possible            
+        - Movement between rooms now possible
+        
+13:42   - Created scr_InventoryCreate
+        - Created obj_Player
+            - Placed scr_InventoryCreate in the Create event of obj_Player
+            - Created a Draw GUI event for obj_Player
+        - Added INGREDIENT to the Macros list @ 0;
+        
+14:55   - Moved scr_InventoryCreate to obj_OVERLORD
+            - Place into the Create event
+        - Created obj_Toast
+            - Now a child of obj_Test
+        - DS Map cash, and DS Grid stuff have been made global
+        - Added 4 more entries to DS Grid stuff

@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_Test</sprite>
     <sprite>sprites\spr_BtnTest</sprite>
+    <sprite>sprites\spr_Toast</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -26,22 +27,32 @@
         <script>scripts\scr_BtnLRelease.gml</script>
       </scripts>
     </scripts>
+    <scripts name="PLAYER">
+      <script>scripts\scr_InventoryCreate.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_Test</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_OVERLORD</object>
-    <object>objects\obj_Test</object>
     <object>objects\obj_BtnMenu</object>
     <object>objects\obj_BtnExit</object>
     <object>objects\obj_Menu</object>
     <object>objects\obj_Button</object>
+    <object>objects\obj_Player</object>
+    <objects name="INGREDIENTS">
+      <object>objects\obj_Toast</object>
+      <object>objects\obj_Test</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_Menu</room>
     <room>rooms\room_Test</room>
   </rooms>
+  <constants number="1">
+    <constant name="INGREDIENT">0</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
