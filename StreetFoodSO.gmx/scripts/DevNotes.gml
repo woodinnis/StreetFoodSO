@@ -79,3 +79,13 @@ GitHub software has been installed and will have to suffice for now.
             - Now a child of obj_Test
         - DS Map cash, and DS Grid stuff have been made global
         - Added 4 more entries to DS Grid stuff
+        
+15:16   - Created new objects to correspond to new DS Grid stuff entries
+        - Created new sprites to represent each of the above new objects
+
+15:53   - Each Ingredient object has been given a create event
+            - sets a variable myIndex
+        - Created DS Map inventory
+        
+16:20   - obj_Inventory now creates a single DS MAP entry on collision with an inventory item
+            - The Draw event displays the name of the object

@@ -3,12 +3,20 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Versitile Inventory Example</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Test</sprite>
     <sprite>sprites\spr_BtnTest</sprite>
-    <sprite>sprites\spr_Toast</sprite>
+    <sprites name="INGREDIENTS">
+      <sprite>sprites\spr_Toast</sprite>
+      <sprite>sprites\spr_Tomato</sprite>
+      <sprite>sprites\spr_Lettuce</sprite>
+      <sprite>sprites\spr_Bacon</sprite>
+      <sprite>sprites\spr_Mayo</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -29,6 +37,7 @@
     </scripts>
     <scripts name="PLAYER">
       <script>scripts\scr_InventoryCreate.gml</script>
+      <script>scripts\scr_InventoryAdd.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -43,8 +52,13 @@
     <object>objects\obj_Player</object>
     <objects name="INGREDIENTS">
       <object>objects\obj_Toast</object>
+      <object>objects\obj_Lettuce</object>
+      <object>objects\obj_Tomato</object>
+      <object>objects\obj_Bacon</object>
+      <object>objects\obj_Mayo</object>
       <object>objects\obj_Test</object>
     </objects>
+    <object>objects\obj_Inventory</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_Menu</room>
