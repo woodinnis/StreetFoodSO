@@ -50,3 +50,9 @@ GitHub software has been installed and will have to suffice for now.
             - Placed in the Draw event of obj_MenuBtn
         - Created scr_MenuCreate
             - Placed in the Create event of obj_Menu
+            
+11:34   - Created scr_BtnCreate
+        - Created scr_BtnLPress
+        - Created scr_BtnLRelease
+        - Created obj_Button
+            - Will serve as a parent object for all buttons in the game

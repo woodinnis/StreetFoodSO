@@ -21,6 +21,11 @@
       <script>scripts\scr_CLICKNDRAG.gml</script>
       <script>scripts\scr_MenuDraw.gml</script>
       <script>scripts\scr_MenuCreate.gml</script>
+      <scripts name="Buttons">
+        <script>scripts\scr_BtnCreate.gml</script>
+        <script>scripts\scr_BtnLPress.gml</script>
+        <script>scripts\scr_BtnLRelease.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -29,8 +34,9 @@
   <objects name="objects">
     <object>objects\obj_OVERLORD</object>
     <object>objects\obj_Test</object>
-    <object>objects\obj_MenuBtn</object>
+    <object>objects\obj_BtnMenu</object>
     <object>objects\obj_Menu</object>
+    <object>objects\obj_Button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_Menu</room>
