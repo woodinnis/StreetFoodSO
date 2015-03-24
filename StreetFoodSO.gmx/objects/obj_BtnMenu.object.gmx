@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_Button</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="6" enumb="0">
@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Set
-ISeeYou = false; // Set visibility to false
-show_debug_message("I'M IN!");
+            <string>// Go to the Testing room
+room_goto(room_Test);
 </string>
           </argument>
         </arguments>
@@ -36,41 +35,27 @@ show_debug_message("I'M IN!");
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>scr_MenuDraw</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>// Draw a label on the button
+draw_self();
+
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text(x,y,"TEST");
+</string>
           </argument>
         </arguments>
       </action>

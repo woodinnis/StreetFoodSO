@@ -56,3 +56,7 @@ GitHub software has been installed and will have to suffice for now.
         - Created scr_BtnLRelease
         - Created obj_Button
             - Will serve as a parent object for all buttons in the game
+            
+11:56   - obj_BtnMenu is now a child of obj_Button
+            - obj_BtnMenu uses event_user() and Draw events
+        - Clicking obj_BtnMenu in room_Menu moves to room_Test

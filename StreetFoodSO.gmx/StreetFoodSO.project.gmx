@@ -19,7 +19,6 @@
     </scripts>
     <scripts name="UI">
       <script>scripts\scr_CLICKNDRAG.gml</script>
-      <script>scripts\scr_MenuDraw.gml</script>
       <script>scripts\scr_MenuCreate.gml</script>
       <scripts name="Buttons">
         <script>scripts\scr_BtnCreate.gml</script>
