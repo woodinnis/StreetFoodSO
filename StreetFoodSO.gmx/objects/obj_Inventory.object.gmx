@@ -68,9 +68,13 @@
           <argument>
             <kind>1</kind>
             <string>// Place it in inventory as it passes over the inventory icon
-scr_ItemPickup(other);
+//scr_ItemPickup(other);
 
-// Destroy the instance of the other object once it is in inventory
+anObject = other;
+
+
+
+/*
 with(other)
     instance_destroy();
 </string>

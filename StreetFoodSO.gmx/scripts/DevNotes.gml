@@ -102,10 +102,21 @@ GitHub software has been installed and will have to suffice for now.
 11:44   - Commented out the DS Grid stuff in scr_InventoryCreate_OLD
             - It was creating confusion at compile time, and items were not spawning from the correct place
         
-12:07   - Key-Pressed Spacebar will spawn items randomly from inventory
+12:07   - obj_Player Key-Pressed Spacebar will spawn items randomly from inventory
             - If items are present in inventory
             - Dumbass
             
-13:03   - Key-Pressed Spacebar creates random items from the ItemDB
-        - Key-Pressed Spacebar will issue a debug message for any invalid array entries
-        
+13:03   - obj_Player Key-Pressed Spacebar creates random items from the ItemDB
+        - obj_Player Key-Pressed Spacebar will issue a debug message for any invalid array entries
+
+13:11   - Adjusted debug messages in obj_Player Key-Pressed Spacebar event
+            - Messages now better indicate what is going on.
+
+13:40   - Adjusted obj_Player Key-Pressed Spacebar
+            - Random number seed is now based on the total array entries
+            - RNG checks inventory against stuff for greater number of entries
+            
+14:17   - obj_Pickup is causing errors after the 1st item is added to inventory
+            - obj_Inventory collision event is not passing the correct information
+            - Trying to rework the collision event to identify item information and pass correct details
+            
