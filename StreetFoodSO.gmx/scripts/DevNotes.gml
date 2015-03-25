@@ -105,3 +105,7 @@ GitHub software has been installed and will have to suffice for now.
 12:07   - Key-Pressed Spacebar will spawn items randomly from inventory
             - If items are present in inventory
             - Dumbass
+            
+13:03   - Key-Pressed Spacebar creates random items from the ItemDB
+        - Key-Pressed Spacebar will issue a debug message for any invalid array entries
+        
