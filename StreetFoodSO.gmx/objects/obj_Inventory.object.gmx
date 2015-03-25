@@ -70,13 +70,23 @@
             <string>// Place it in inventory as it passes over the inventory icon
 //scr_ItemPickup(other);
 
-anObject = other;
+anObject = other.object_index;  // Define variable and set to index of item //instance_id;
 
+// Scan the ItemDB
+for(i = 0; i &lt; array_length_1d(stuff); i++)
+{
+    // Verify the object has a valid entry in the ItemDB, and place it in inventory
+    if(anObject == stuff[i,3])
+    {
+        scr_ItemPickup(stuff[i,0]);
+        show_debug_message(object_get_name(anObject));
 
+        // Destroy the object
+        with(anObject)
+            instance_destroy();
+    }
+}
 
-/*
-with(other)
-    instance_destroy();
 </string>
           </argument>
         </arguments>

@@ -119,4 +119,5 @@ GitHub software has been installed and will have to suffice for now.
 14:17   - obj_Pickup is causing errors after the 1st item is added to inventory
             - obj_Inventory collision event is not passing the correct information
             - Trying to rework the collision event to identify item information and pass correct details
-            
+
+15:06   - obj_Inventory collision now accepts multiple items

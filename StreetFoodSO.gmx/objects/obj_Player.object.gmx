@@ -33,7 +33,7 @@ randomize();
 if(array_height_2d(inventory) &lt;= array_height_2d(stuff))
     item = floor(random(array_height_2d(stuff)));
 else
-    item = floor(random(array_height_2d(inventory)));
+    item = floor(random(array_height_2d(stuff)));
 
     
 show_debug_message("Item #: " + string(item));
