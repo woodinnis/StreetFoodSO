@@ -127,3 +127,8 @@ GitHub software has been installed and will have to suffice for now.
 15:43   - Retrieving items from inventory is now possible
             - Retrieving an item from inventory will remove the item from inventory
             - This will mark the inventory position as empty and available
+            
+16:45   - Items retrieved from inventory are no longer random
+            - Fixed randomization element
+            - Inventory is now checked before spawning a new instance
+        - Spawning items from obj_Inventory is now performed using a LMB_released event
