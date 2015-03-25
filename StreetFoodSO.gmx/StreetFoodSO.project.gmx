@@ -21,8 +21,10 @@
   <scripts name="scripts">
     <script>scripts\DevNotes.gml</script>
     <scripts name="OVERLORD">
-      <script>scripts\scr_DEBUG.gml</script>
+      <script>scripts\scr_ItemDB.gml</script>
+      <script>scripts\scr_InventoryCreate_OLD.gml</script>
       <script>scripts\scr_OVERLORD_Create.gml</script>
+      <script>scripts\scr_DEBUG.gml</script>
     </scripts>
     <scripts name="UI">
       <script>scripts\scr_CLICKNDRAG.gml</script>
@@ -34,11 +36,13 @@
       </scripts>
     </scripts>
     <scripts name="PLAYER">
-      <script>scripts\scr_InventoryCreate_OLD.gml</script>
-      <script>scripts\scr_InventoryAdd.gml</script>
-      <script>scripts\scr_InventoryCreate.gml</script>
-      <script>scripts\scr_ItemDB.gml</script>
+      <script>scripts\scr_ItemCreate.gml</script>
+      <script>scripts\scr_ItemGet.gml</script>
+    </scripts>
+    <scripts name="INVENTORY">
       <script>scripts\scr_ItemPickup.gml</script>
+      <script>scripts\scr_InventoryCreate.gml</script>
+      <script>scripts\scr_InventoryAdd.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

@@ -1,5 +1,19 @@
-// Add an item to the inventory as it is placed on to the inventory icon
+// Place it in inventory as it passes over the inventory icon
+//scr_ItemPickup(other);
 
-itemName = stuff[# other.myIndex,0];
+anObject = other.object_index;  // Define variable and set to index of item //instance_id;
 
-ds_map_replace(inventory, itemName, itemName);
+// Scan the ItemDB
+for(i = 0; i <= array_length_1d(stuff); i++)
+{
+    // Verify the object has a valid entry in the ItemDB, and place it in inventory
+    if(anObject == stuff[i,3])
+    {
+        scr_ItemPickup(stuff[i,0]);
+        show_debug_message(object_get_name(anObject));
+
+        // Destroy the object
+        with(anObject)
+            instance_destroy();
+    }
+}

@@ -121,3 +121,9 @@ GitHub software has been installed and will have to suffice for now.
             - Trying to rework the collision event to identify item information and pass correct details
 
 15:06   - obj_Inventory collision now accepts multiple items
+
+15:24   - Moved several scripts out of Execute Script events into their own script resources
+
+15:43   - Retrieving items from inventory is now possible
+            - Retrieving an item from inventory will remove the item from inventory
+            - This will mark the inventory position as empty and available
