@@ -89,3 +89,19 @@ GitHub software has been installed and will have to suffice for now.
         
 16:20   - obj_Inventory now creates a single DS MAP entry on collision with an inventory item
             - The Draw event displays the name of the object
+            
+//    Begin Notes for March 25, 2015    //
+
+10:14   - Found a tutorial on inventory systems on yoyo forums
+            - Attempting to build inventory system using this tutorial
+        - Renamed scr_InventoryCreate to scrInventoryCreate_OLD
+        - Created a new scr_InventoryCreate
+        - Created scr_ItemDB
+            - Copied the item list from scr_InventoryCreate_OLD
+            
+11:44   - Commented out the DS Grid stuff in scr_InventoryCreate_OLD
+            - It was creating confusion at compile time, and items were not spawning from the correct place
+        
+12:07   - Key-Pressed Spacebar will spawn items randomly from inventory
+            - If items are present in inventory
+            - Dumbass

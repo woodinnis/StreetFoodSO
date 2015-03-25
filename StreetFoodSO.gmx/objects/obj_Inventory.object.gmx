@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="obj_Test">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_InventoryAdd</script>
+            <script>scr_InventoryCreate</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -50,6 +50,34 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_Test">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Place it in inventory as it passes over the inventory icon
+scr_ItemPickup(other);
+
+// Destroy the instance of the other object once it is in inventory
+with(other)
+    instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -67,11 +95,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y,obj_Test))
-{
-    draw_text(x,y,"BOOM!");
-    draw_text(x+100,y+100,ds_map_find_value(inventory,itemName));
+            <string>// A basic set of UI elements for the inventory system
+
+draw_text(x,y,"BOOM!");     
+for(i = 0; i &lt; maxInvSlots; i++)
+{       
+    draw_text(x+100,y+100 + (16 + i),inventory[i,0]);
 }
+
 
 </string>
           </argument>

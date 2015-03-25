@@ -28,9 +28,17 @@
             <string>// Create an item from the player's inventory
 randomize();
 
-anObject = ds_grid_get(stuff,random(ds_grid_width(stuff)),3);
+item = floor(random(maxInvSlots));
 
-instance_create(room_width/2,room_height/2,anObject);
+if(inventory[item,0] != "")
+{
+    me = stuff[item,3];
+    instance_create(room_width/2,room_height/2,me);
+    show_debug_message("I'm A: " + string(me));
+}
+else
+    show_debug_message("Item: " + string(item));
+
 </string>
           </argument>
         </arguments>

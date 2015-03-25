@@ -3,9 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions>
-    <extension index="0">extensions\Versitile Inventory Example</extension>
-  </NewExtensions>
+  <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Test</sprite>
@@ -36,8 +34,11 @@
       </scripts>
     </scripts>
     <scripts name="PLAYER">
-      <script>scripts\scr_InventoryCreate.gml</script>
+      <script>scripts\scr_InventoryCreate_OLD.gml</script>
       <script>scripts\scr_InventoryAdd.gml</script>
+      <script>scripts\scr_InventoryCreate.gml</script>
+      <script>scripts\scr_ItemDB.gml</script>
+      <script>scripts\scr_ItemPickup.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
