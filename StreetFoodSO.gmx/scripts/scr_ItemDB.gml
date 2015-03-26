@@ -1,3 +1,5 @@
+// A database of Items the player can collect
+
 globalvar stuff;    // Declare the array "stuff" as global
 
 stuff[0,0] = "Toast";

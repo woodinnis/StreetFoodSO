@@ -15,6 +15,7 @@
       <sprite>sprites\spr_Bacon</sprite>
       <sprite>sprites\spr_Mayo</sprite>
     </sprites>
+    <sprite>sprites\spr_Assemble</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -25,6 +26,7 @@
       <script>scripts\scr_InventoryCreate_OLD.gml</script>
       <script>scripts\scr_OVERLORD_Create.gml</script>
       <script>scripts\scr_DEBUG.gml</script>
+      <script>scripts\scr_RecipeDB.gml</script>
     </scripts>
     <scripts name="UI">
       <script>scripts\scr_CLICKNDRAG.gml</script>
@@ -38,6 +40,7 @@
     <scripts name="PLAYER">
       <script>scripts\scr_ItemCreate.gml</script>
       <script>scripts\scr_ItemGet.gml</script>
+      <script>scripts\scr_RecipeBuild.gml</script>
     </scripts>
     <scripts name="INVENTORY">
       <script>scripts\scr_ItemPickup.gml</script>
@@ -64,6 +67,7 @@
       <object>objects\obj_Test</object>
     </objects>
     <object>objects\obj_Inventory</object>
+    <object>objects\obj_Counter</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_Menu</room>

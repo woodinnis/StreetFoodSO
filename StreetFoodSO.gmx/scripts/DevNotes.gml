@@ -143,3 +143,12 @@ GitHub software has been installed and will have to suffice for now.
             - These two scripts should be merged
             
 15:28   - Streamlined scr_CLICKNDRAG
+
+16:00   - Created scr_RecipeDB to start writing game recipes
+            - Attached to Create Event of obj_OVERLORD
+
+16:38   - Created obj_Counter
+        - Created scr_RecipeBuild
+            - Attached to the Collision Event of obj_Counter
+        - obj_Counter now has basic ingredient recognition
+            - Can be told to distinguish between recipes from the RecipeDB
