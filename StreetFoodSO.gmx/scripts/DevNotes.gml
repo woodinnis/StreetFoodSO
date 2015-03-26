@@ -138,3 +138,8 @@ GitHub software has been installed and will have to suffice for now.
 14:24   - Items no longer spawn directly on top of each other when created with Key_Pressed Spacebar Event
         - Items spawned from inventory no longer spawn directly on top of each other
 
+15:06   - scr_ItemCreate and scr_ItemGet are virtually identical
+            - only the item spawn function itself is different
+            - These two scripts should be merged
+            
+15:28   - Streamlined scr_CLICKNDRAG
