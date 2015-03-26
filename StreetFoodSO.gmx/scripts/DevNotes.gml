@@ -132,3 +132,9 @@ GitHub software has been installed and will have to suffice for now.
             - Fixed randomization element
             - Inventory is now checked before spawning a new instance
         - Spawning items from obj_Inventory is now performed using a LMB_released event
+
+//    Begin Notes for March 26, 2015    //
+
+14:24   - Items no longer spawn directly on top of each other when created with Key_Pressed Spacebar Event
+        - Items spawned from inventory no longer spawn directly on top of each other
+
