@@ -71,6 +71,7 @@ numIngredient = array_length_2d(recipe,pos);
 
 for(i = 1; i &lt; numIngredient; i++)
 {
+   // j = i - 1;
     // Place each ingredient into an array
     if(recipe[pos,i] != "")
     {
@@ -173,6 +174,11 @@ if(ingredientCount &lt;= 0)
 draw_self();
 
 draw_text(x, y + 32, currentDish);
+
+for(i = 0; i &lt; array_length_1d(myIngredients); i++)
+{
+    draw_text(x, y + 48 + (16 * i), myIngredients[i]);
+}
 </string>
           </argument>
         </arguments>
