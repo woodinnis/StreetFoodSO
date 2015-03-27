@@ -9,23 +9,18 @@ anObject = other.object_index;  // Define variable and set to index of item //in
 for(i = 0; i <= array_length_1d(stuff); i++)
 {
     if(anObject == stuff[i,3])
-    {
+    {   
+        // Scan each ingredient in the recipe for a match to the current item
         for(j = 1; j < numIngredient; j++)
         {
             if(recipe[0,j] == stuff[i,0])
+            {
+                // detroy the currently held object
+                with other
+                    instance_destroy()
+                    
                 show_debug_message("You found one!");
+            }
         }
     }
-
-    /* Verify the object has a valid entry in the ItemDB, and place it in inventory
-    if(anObject == stuff[i,3])
-    {
-        scr_ItemPickup(stuff[i,0]);
-        show_debug_message(object_get_name(anObject));
-
-        // Destroy the object
-        with(anObject)
-            instance_destroy();
-
-    }*/
 }

@@ -152,3 +152,10 @@ GitHub software has been installed and will have to suffice for now.
             - Attached to the Collision Event of obj_Counter
         - obj_Counter now has basic ingredient recognition
             - Can be told to distinguish between recipes from the RecipeDB
+            
+//    Begin Notes for March 27, 2015    //
+
+10:22   - Created scr_DishGenerate
+            - Uses RNG to select from the RecipeDB
+            - Attached to Key-"R" of obj_OVERLORD
+        - Draws name of recipe at center of screen view
