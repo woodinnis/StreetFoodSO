@@ -13,14 +13,22 @@ for(i = 0; i <= array_length_1d(stuff); i++)
         // Scan each ingredient in the recipe for a match to the current item
         for(j = 1; j < numIngredient; j++)
         {
-            if(recipe[0,j] == stuff[i,0])
+            if(myIngredients[j] == stuff[i,0])
             {
                 // detroy the currently held object
                 with other
                     instance_destroy()
-                    
-                show_debug_message("You found one!");
+                
+                myIngredient[j] = "";
+                show_debug_message("wargarrbll");
             }
+            /*
+            if(array_length_1d(myIngredients) < 1)
+            {
+                with(self)
+                    instance_destroy();
+            }
+            */
         }
     }
 }

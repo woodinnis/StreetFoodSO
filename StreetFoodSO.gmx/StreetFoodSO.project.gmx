@@ -16,6 +16,7 @@
       <sprite>sprites\spr_Mayo</sprite>
     </sprites>
     <sprite>sprites\spr_Assemble</sprite>
+    <sprite>sprites\spr_Dish</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -69,6 +70,7 @@
     </objects>
     <object>objects\obj_Inventory</object>
     <object>objects\obj_Counter</object>
+    <object>objects\obj_Dish</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_Menu</room>
