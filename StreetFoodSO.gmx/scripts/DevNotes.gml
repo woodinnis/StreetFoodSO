@@ -159,3 +159,15 @@ GitHub software has been installed and will have to suffice for now.
             - Uses RNG to select from the RecipeDB
             - Attached to Key-"R" of obj_OVERLORD
         - Draws name of recipe at center of screen view
+        
+10:38   - Created obj_Dish
+        
+11:04   - Moved scr_DishGenerate to Create Event of obj_Dish
+        - on Create Event obj_Dish creates a list of ingredients it needs for completion
+        
+11:48   - Moved scr_RecipeBuild to obj_Dish Collide Event
+            - obj_Dish registers when a necessary ingredient collides with it
+
+13:01   - obj_Dish now runs instance_destroy() when it has collected all necessary ingredients
+            - currently this is done by counting ingredients
+            - Ideally this would be done by verifying all ingredients in the array

@@ -16,19 +16,15 @@ for(i = 0; i <= array_length_1d(stuff); i++)
             if(myIngredients[j] == stuff[i,0])
             {
                 // detroy the currently held object
-                with other
-                    instance_destroy()
+                with(other)
+                {
+                    instance_destroy();
+                }
                 
-                myIngredient[j] = "";
+                myIngredient[j] = "";   // Remove the ingredient requirement from the list
+                ingredientCount--;      // Subtract 1 from the ingredient count
                 show_debug_message("wargarrbll");
             }
-            /*
-            if(array_length_1d(myIngredients) < 1)
-            {
-                with(self)
-                    instance_destroy();
-            }
-            */
         }
     }
 }
