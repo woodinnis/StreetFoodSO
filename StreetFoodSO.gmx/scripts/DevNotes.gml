@@ -180,3 +180,8 @@ GitHub software has been installed and will have to suffice for now.
 10:19   - Created scr_DishIngredients to replace a script action in the Create event of obj_Dish
 
 10:58   - obj_Dish Step Event now checks the contents of the ingredients list to verify recipe completion instead of counting
+
+11:30   - obj_Counter now creates an instance of obj_Dish in the Create Event
+
+11:37   - scr_InventoryCreate_OLD removed
+            - Remaining variables replaced in other scripts

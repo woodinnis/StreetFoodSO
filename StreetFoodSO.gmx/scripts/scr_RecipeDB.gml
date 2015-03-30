@@ -6,7 +6,7 @@ globalvar recipe;   // Declare recipe as a global array
 // Recipes are entered in the following format:
 // Name
 // Ingredient 1 - required
-// Ingridient 2 - required
+// Ingredient 2 - required
 // Ingredient 3 - Optional
 // Ingredient 4 - Optional
 //
