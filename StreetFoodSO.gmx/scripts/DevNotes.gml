@@ -171,3 +171,12 @@ GitHub software has been installed and will have to suffice for now.
 13:01   - obj_Dish now runs instance_destroy() when it has collected all necessary ingredients
             - currently this is done by counting ingredients
             - Ideally this would be done by verifying all ingredients in the array
+
+13:30   - obj_Dish draws a list of required ingredients to the screen
+
+
+//    Begin Notes for March 30, 2015    //
+
+10:19   - Created scr_DishIngredients to replace a script action in the Create event of obj_Dish
+
+10:58   - obj_Dish Step Event now checks the contents of the ingredients list to verify recipe completion instead of counting
