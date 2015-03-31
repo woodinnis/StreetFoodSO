@@ -196,3 +196,7 @@ GitHub software has been installed and will have to suffice for now.
             - scr_InventoryCreate sets the inventory[] y dimension to 0
             - scr_ItemPickup now checks for an existing entry and if found adds to its count
             - obj_Inventory Draw Event now shows item count next to item names
+            
+11:47   - obj_Inventory now only removes items from inventory when the count reaches 0
+
+12:00   - scr_ItemGet now scans on every click until it finds a valid entry
