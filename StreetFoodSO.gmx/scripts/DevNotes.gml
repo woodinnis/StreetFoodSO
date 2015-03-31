@@ -208,4 +208,6 @@ GitHub software has been installed and will have to suffice for now.
 
 14:18   - Inventory array now replaces all empty slots with existing items
             - When any inventory item reaches 0, it is removed from the inventory array, and each remaining item is moved in to replace it
-            
+
+16:46   - scr_RecipeBuild Collision Event now removes any collected ingredients from the ingredient list
+            - Similar to scr_ItemGet, the Ingredient list will scroll up as ingredients are collected

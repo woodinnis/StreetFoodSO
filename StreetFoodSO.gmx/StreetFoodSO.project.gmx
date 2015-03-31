@@ -55,6 +55,7 @@
     <scripts name="COUNTER">
       <script>scripts\scr_CounterAlarm0.gml</script>
     </scripts>
+    <script>scripts\scr_ArrayRemoveContents.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_Test</font>
