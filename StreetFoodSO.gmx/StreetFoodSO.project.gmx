@@ -51,6 +51,9 @@
       <script>scripts\scr_RecipeBuild.gml</script>
       <script>scripts\scr_DishGenerate.gml</script>
     </scripts>
+    <scripts name="COUNTER">
+      <script>scripts\scr_CounterAlarm0.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_Test</font>

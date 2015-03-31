@@ -185,3 +185,9 @@ GitHub software has been installed and will have to suffice for now.
 
 11:37   - scr_InventoryCreate_OLD removed
             - Remaining variables replaced in other scripts
+            
+//    Begin Notes for March 31, 2015    //
+
+10:09   - Created scr_CounterAlarm0 to replace executed script in Alarm 0 event of obj_Counter
+            - obj_Counter now spawns a series of obj_Dish on top of it
+            - A check is done to prevent overlapping instances
