@@ -1,10 +1,14 @@
 // Get an item out of inventory
 
 item = 0;
+checkCount = 0;
 
 // Check for an entry 
-while(inventory[item,0] == "")
+do
+{
     item = floor(random(array_height_2d(inventory)));
+    checkCount++;   // Avoids an endless loop when clicking an empty inventory
+}until(inventory[item,0] != "" || checkCount > array_height_2d(inventory))
 
 // Check for a valid entry in the inventory
 if(inventory[item,0] != "")
@@ -37,7 +41,16 @@ if(inventory[item,0] != "")
         inventory[item,1]--;
     }
 
-    // If the count is now 0, mark the position as empty
-    if(inventory[item,1] == 0)   
-        inventory[item,0] = "";
+    // If the count is now 0, move all items up one place in inventory
+    if(inventory[item,1] == 0)
+    {
+        for(i = item; i < array_height_2d(inventory); i++)
+        {
+            if(i + 1 < array_height_2d(inventory))
+            {
+                inventory[i,0] = inventory[i + 1,0];
+                inventory[i,1] = inventory[i + 1,1];
+            }
+        }
+    }
 }

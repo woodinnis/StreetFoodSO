@@ -203,3 +203,9 @@ GitHub software has been installed and will have to suffice for now.
 
 12:16   - obj_Inventory Draw Event now only draws names and numbers of items currently in inventory
             - Replaced executed script with scr_InventoryDraw
+            
+13:46   - Fixed an endless loop bug in scr_ItemGet caused when clicking on an empty inventory
+
+14:18   - Inventory array now replaces all empty slots with existing items
+            - When any inventory item reaches 0, it is removed from the inventory array, and each remaining item is moved in to replace it
+            

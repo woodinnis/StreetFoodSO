@@ -9,5 +9,5 @@ for(i = 0; i < maxInvSlots; i++)
     else
         myCount = "";
         
-    draw_text(x+100,y+100 + (16 * i),inventory[i,0] + myCount);
+    draw_text(x,y+50 + (16 * i),inventory[i,0] + myCount);
 }
