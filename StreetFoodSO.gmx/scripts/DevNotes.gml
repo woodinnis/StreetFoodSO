@@ -200,3 +200,6 @@ GitHub software has been installed and will have to suffice for now.
 11:47   - obj_Inventory now only removes items from inventory when the count reaches 0
 
 12:00   - scr_ItemGet now scans on every click until it finds a valid entry
+
+12:16   - obj_Inventory Draw Event now only draws names and numbers of items currently in inventory
+            - Replaced executed script with scr_InventoryDraw
