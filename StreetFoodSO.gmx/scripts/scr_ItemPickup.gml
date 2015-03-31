@@ -1,14 +1,19 @@
 // Add items to the inventory 
 
+// Scan the inventory
 for(i = 0; i < maxInvSlots; i++)
 {
-    show_debug_message("Slot" + string(i));
-    
-    // If slot i is empty, place item into empty slot, and set i to maxInvSlots, ending the loop
-    if(inventory[i,0] == "")
+    // If item already exists in inventory add to its count    
+    if(inventory[i,0] == argument0)
     {
-        show_debug_message("Im in slot: " + string(i));
+        inventory[i,1]++;
+        i = maxInvSlots;
+    }
+    // If item does not currently exist in inventory place it at position i    
+    else if(inventory[i,0] == "")
+    {
         inventory[i,0] = argument0;
+        inventory[i,1] = 1;
         i = maxInvSlots;
     }
 }

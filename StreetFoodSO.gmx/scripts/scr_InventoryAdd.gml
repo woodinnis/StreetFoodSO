@@ -10,7 +10,6 @@ for(i = 0; i <= array_length_1d(stuff); i++)
     if(anObject == stuff[i,3])
     {
         scr_ItemPickup(stuff[i,0]);
-        show_debug_message(object_get_name(anObject));
 
         // Destroy the object
         with(anObject)

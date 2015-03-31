@@ -10,4 +10,5 @@ maxInvSlots = 10;       // Set maxInvSlots
 for(i=0; i < maxInvSlots; i++)
 {
     inventory[i,0] = "";
+    inventory[i,1] = 0;
 }

@@ -39,12 +39,12 @@
     </scripts>
     <scripts name="PLAYER">
       <script>scripts\scr_ItemCreate.gml</script>
-      <script>scripts\scr_ItemGet.gml</script>
     </scripts>
     <scripts name="INVENTORY">
       <script>scripts\scr_ItemPickup.gml</script>
       <script>scripts\scr_InventoryCreate.gml</script>
       <script>scripts\scr_InventoryAdd.gml</script>
+      <script>scripts\scr_ItemGet.gml</script>
     </scripts>
     <scripts name="DISH">
       <script>scripts\scr_DishIngredients.gml</script>

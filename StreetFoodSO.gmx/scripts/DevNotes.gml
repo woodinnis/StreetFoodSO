@@ -191,3 +191,8 @@ GitHub software has been installed and will have to suffice for now.
 10:09   - Created scr_CounterAlarm0 to replace executed script in Alarm 0 event of obj_Counter
             - obj_Counter now spawns a series of obj_Dish on top of it
             - A check is done to prevent overlapping instances
+            
+11:30   - Adjusted the scripts of obj_Inventory to register multiple numbers of similar items
+            - scr_InventoryCreate sets the inventory[] y dimension to 0
+            - scr_ItemPickup now checks for an existing entry and if found adds to its count
+            - obj_Inventory Draw Event now shows item count next to item names
