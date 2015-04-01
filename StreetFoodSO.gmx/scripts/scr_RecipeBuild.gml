@@ -3,6 +3,8 @@
 // Set the maximum number of ingredients to be scanned
 numIngredient = array_length_1d(myIngredients);
 
+ingPosition = 0;
+
 anObject = other.object_index;  // Define variable and set to index of item //instance_id;
 
 // Scan the ItemDB
@@ -39,7 +41,6 @@ for(i = 0; i <= array_length_1d(stuff); i++)
         }
     }
 }
-
 
 
 

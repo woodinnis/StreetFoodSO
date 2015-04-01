@@ -30,7 +30,6 @@
     </scripts>
     <scripts name="UI">
       <script>scripts\scr_CLICKNDRAG.gml</script>
-      <script>scripts\scr_MenuCreate.gml</script>
       <scripts name="Buttons">
         <script>scripts\scr_BtnCreate.gml</script>
         <script>scripts\scr_BtnLPress.gml</script>
@@ -64,7 +63,6 @@
     <object>objects\obj_OVERLORD</object>
     <objects name="BUTTONS">
       <object>objects\obj_Button</object>
-      <object>objects\obj_Menu</object>
       <object>objects\obj_BtnExit</object>
       <object>objects\obj_BtnOrder</object>
       <object>objects\obj_BtnMenu</object>

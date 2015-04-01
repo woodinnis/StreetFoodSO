@@ -226,3 +226,16 @@ GitHub software has been installed and will have to suffice for now.
         - Created obj_BtnOrder
         - Placed obj_BtnOrder in room_Test
         - Placed obj_Player in room_Order
+        
+10:15   - Deleted scr_MenuCreate and obj_Menu
+            - No longer in use
+            
+10:23   - Added obj_BtnMenu to room_Order
+            - Can now return to room_Test
+            
+10:27   - Fixed minor error in scr_RecipeBuild
+            - Recipes were not scrolling up properly due to an undeclared variable
+
+10:42   - Made obj_Inventory a persistent object and placed it in room_Test
+            - Room Start Event turns visibility off in room_Menu
+        - Removed obj_Player from room_Test
