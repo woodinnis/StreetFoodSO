@@ -72,14 +72,15 @@
       <object>objects\obj_BtnMenu</object>
     </objects>
     <objects name="INGREDIENTS">
+      <object>objects\obj_IngredientParent</object>
       <object>objects\obj_Toast</object>
       <object>objects\obj_Lettuce</object>
       <object>objects\obj_Tomato</object>
       <object>objects\obj_Bacon</object>
       <object>objects\obj_Mayo</object>
-      <object>objects\obj_Test</object>
     </objects>
     <objects name="EQUIPMENT">
+      <object>objects\obj_EquipParent</object>
       <object>objects\obj_Fryer</object>
       <object>objects\obj_Griddle</object>
     </objects>

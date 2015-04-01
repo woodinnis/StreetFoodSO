@@ -247,3 +247,6 @@ GitHub software has been installed and will have to suffice for now.
         - Created obj_Fryer, obj_Griddle
         - Added entries for Fryer and Griddle to ItemDB
         - Created EQUIPMENT constant
+        
+11:45   - Created obj_EquipParent
+            - Will serve as parent object to all equipment
