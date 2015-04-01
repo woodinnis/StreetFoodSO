@@ -270,3 +270,6 @@ GitHub software has been installed and will have to suffice for now.
             
 15:55   - scr_CLICKNDRAG now accepts arguments
             - obj_IngredientParent and obj_EquipParent now only drag in room_Test
+            
+16:24   - scr_InventoryAdd now checks ItemDB for item type before adding to inventory
+            - A limit of 4 pieces of EQUIPMENT has been put in place

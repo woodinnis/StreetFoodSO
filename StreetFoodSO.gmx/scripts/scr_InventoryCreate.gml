@@ -6,6 +6,9 @@ globalvar inventory;    // Declare inventory as a global variable
 
 maxInvSlots = 10;       // Set maxInvSlots
 
+equipCount = 0;         // Number of pieces of equipment being held
+maxEquip = 4;           // Maximum number of pieces of equipment
+
 // Create inventory slots
 for(i=0; i < maxInvSlots; i++)
 {
