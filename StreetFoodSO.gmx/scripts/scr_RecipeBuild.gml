@@ -1,7 +1,7 @@
 // Assemble Ingredients to complete a recipe
 
 // Set the maximum number of ingredients to be scanned
-numIngredient = array_length_1d(myIngredients);
+numIngredient = array_height_2d(myIngredients);
 
 ingPosition = 0;
 
@@ -15,7 +15,7 @@ for(i = 0; i <= array_length_1d(ItemDB); i++)
         // Scan each ingredient in the recipe for a match to the current item
         for(j = 0; j < numIngredient; j++)
         {
-            if(myIngredients[j] == ItemDB[i,0])
+            if(myIngredients[j,0] == ItemDB[i,0])
             {
                 ingPosition = j                
                 // detroy the currently held object
@@ -23,22 +23,14 @@ for(i = 0; i <= array_length_1d(ItemDB); i++)
                 {
                     instance_destroy();
                 }
-                myIngredients[j] = "";   // Remove the ingredient requirement from the list                
+                
+                myIngredients[j,0] = "";    // Remove the ingredient requirement from the list
+                myIngredients[j,1] = 0;     // Set quantity to 0
             }
         }
+        
         // Move all items in the ingredients list up by one position
-        if(myIngredients[ingPosition] == "")
-        {
-            for(i = ingPosition; i < numIngredient; i++)
-            {
-                // Replace the unused position with an empty string
-                if(i + 1 < numIngredient)
-                {
-                    myIngredients[i] = myIngredients[i + 1];
-                    myIngredients[i + 1] = "";
-                }
-            }
-        }
+        scr_ArrayRemoveContents(myIngredients,ingPosition);
     }
 }
 

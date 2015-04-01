@@ -1,6 +1,6 @@
 // A Database of recipes the player can assemble
 
-globalvar recipe;   // Declare recipe as a global array
+globalvar RecipeDB;   // Declare RecipeDB as a global array
 
 // Recipes have up to 4 ingredients (at this time)
 // Recipes are entered in the following format:
@@ -12,14 +12,14 @@ globalvar recipe;   // Declare recipe as a global array
 //
 // All fields must have an entry. But optional entries may be left blank ("")
 
-recipe[0,0] = "Tomato & Toast";
-recipe[0,1] = "Toast";
-recipe[0,2] = "Tomato";
-recipe[0,3] = "";
-recipe[0,4] = "";
+RecipeDB[0,0] = "Tomato & Toast";
+RecipeDB[0,1] = "Toast";
+RecipeDB[0,2] = "Tomato";
+RecipeDB[0,3] = "";
+RecipeDB[0,4] = "";
 
-recipe[1,0] = "BLT";
-recipe[1,1] = "Toast";
-recipe[1,2] = "Bacon";
-recipe[1,3] = "Lettuce";
-recipe[1,4] = "Tomato";
+RecipeDB[1,0] = "BLT";
+RecipeDB[1,1] = "Toast";
+RecipeDB[1,2] = "Bacon";
+RecipeDB[1,3] = "Lettuce";
+RecipeDB[1,4] = "Tomato";

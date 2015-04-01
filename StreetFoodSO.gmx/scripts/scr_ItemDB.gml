@@ -26,7 +26,7 @@ ItemDB[4,0] = "Mayonnaise";
 ItemDB[4,1] = INGREDIENT;
 ItemDB[4,2] = 10;
 ItemDB[4,3] = obj_Mayo;
-
+/* Commented out for testing
 ItemDB[5,0] = "Fryer";
 ItemDB[5,1] = EQUIPMENT;
 ItemDB[5,2] = 100;

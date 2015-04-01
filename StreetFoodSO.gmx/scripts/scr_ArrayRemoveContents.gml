@@ -1,17 +1,19 @@
 // Check the contents of an array, and move them up as they are removed
 
-iAmArray = argument0;
-atPosition = argument1;
+arrayName = argument0;
+arrayPosition = argument1;
 
-//if(iAmArray[atPosition,1] == 0)
-//{
-    for(i = atPosition; i < array_height_2d(iAmArray); i++)
+if(arrayName[@arrayPosition,1] == 0)
+{
+    for(i = arrayPosition; i < array_height_2d(arrayName); i++)
     {
-        if(i + 1 < array_height_2d(iAmArray))
+        if(i + 1 < array_height_2d(arrayName))
         {
             show_debug_message("Like A MOFO!");
-            iAmArray[i,0] = iAmArray[i + 1,0];
-            iAmArray[i,1] = iAmArray[i + 1,1];
+            arrayName[@i,0] = arrayName[@i + 1,0];
+            arrayName[@i,1] = arrayName[@i + 1,1];
+            arrayName[@i + 1,0] = "";
+            arrayName[@i + 1,1] = 0;
         }
     }
-//}
+}

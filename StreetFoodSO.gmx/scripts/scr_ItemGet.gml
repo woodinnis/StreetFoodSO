@@ -42,17 +42,7 @@ if(inventory[item,0] != "")
         // Reduce the count
         inventory[item,1]--;
     }
-
-    // If the count is now 0, move all items up one place in inventory
-    if(inventory[item,1] == 0)
-    {
-        for(i = item; i < array_height_2d(inventory); i++)
-        {
-            if(i + 1 < array_height_2d(inventory))
-            {
-                inventory[i,0] = inventory[i + 1,0];
-                inventory[i,1] = inventory[i + 1,1];
-            }
-        }
-    }
+    
+    // Move items up one place in inventory
+    scr_ArrayRemoveContents(inventory,item);
 }

@@ -111,7 +111,7 @@
 
 for(i = 0; i &lt; ingredientCount; i++)
 {
-    if(myIngredients[i] != "")
+    if(myIngredients[i,0] != "")
     {
         break;
     }
@@ -190,9 +190,9 @@ draw_self();
 
 draw_text(x, y + 32, currentDish);
 
-for(i = 0; i &lt; array_length_1d(myIngredients); i++)
+for(i = 0; i &lt; array_height_2d(myIngredients); i++)
 {
-    draw_text(x, y + 48 + (16 * i), myIngredients[i]);
+    draw_text(x, y + 48 + (16 * i), myIngredients[i,0]);
 }
 </string>
           </argument>

@@ -250,3 +250,14 @@ GitHub software has been installed and will have to suffice for now.
         
 11:45   - Created obj_EquipParent
             - Will serve as parent object to all equipment
+            
+11:53   - Renamed obj_Test to obj_IngredientParent
+            - Was already serving this purpose, renamed for clarity
+            
+13:12   - Renamed array "recipe" to RecipeDB for clarity
+            - Replaced all code instances of "recipe"
+            
+13:28   - myIngredients is now a 2D array, for functionality with scr_ArrayRemoveContents
+            - May use 2nd D for price or cook-time
+            
+14:03   - Inventory and Recipe(Dish) ingredient sorting has been moved to scr_ArrayRemoveContents
