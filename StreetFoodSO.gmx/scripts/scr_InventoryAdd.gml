@@ -4,7 +4,7 @@
 anObject = other.object_index;  // Define variable and set to index of item //instance_id;
 
 // Scan the ItemDB
-for(i = 0; i <= array_length_1d(ItemDB); i++)
+for(i = 0; i <= array_height_2d(ItemDB); i++)
 {
     // Verify the object has a valid entry in the ItemDB, and place it in inventory
     if(anObject == ItemDB[i,3])

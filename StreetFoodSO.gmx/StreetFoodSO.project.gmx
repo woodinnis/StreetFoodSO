@@ -21,6 +21,7 @@
     <sprite>sprites\spr_BtnTest</sprite>
     <sprite>sprites\spr_Counter</sprite>
     <sprite>sprites\spr_Dish</sprite>
+    <sprite>sprites\spr_EquipSlot</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -83,6 +84,7 @@
       <object>objects\obj_EquipParent</object>
       <object>objects\obj_Fryer</object>
       <object>objects\obj_Griddle</object>
+      <object>objects\obj_EquipSlot</object>
     </objects>
     <object>objects\obj_Inventory</object>
     <object>objects\obj_Player</object>
