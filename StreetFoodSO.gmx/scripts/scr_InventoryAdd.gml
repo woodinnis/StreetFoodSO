@@ -1,18 +1,19 @@
 // Place it in inventory as it passes over the inventory icon
 //scr_ItemPickup(other);
 
-anObject = other.object_index;  // Define variable and set to index of item //instance_id;
+anObject = argument0;
 
 // Scan the ItemDB
-for(i = 0; i <= array_height_2d(ItemDB); i++)
+for(i = 0; i < array_height_2d(ItemDB); i++)
 {
     // Verify the object has a valid entry in the ItemDB, and place it in inventory
     if(anObject == ItemDB[i,3])
     {
         scr_ItemPickup(ItemDB[i,0]);
 
-        // Destroy the object
+        /* Destroy the object
         with(anObject)
             instance_destroy();
+        */
     }
 }

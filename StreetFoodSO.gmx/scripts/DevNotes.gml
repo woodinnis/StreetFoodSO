@@ -261,3 +261,12 @@ GitHub software has been installed and will have to suffice for now.
             - May use 2nd D for price or cook-time
             
 14:03   - Inventory and Recipe(Dish) ingredient sorting has been moved to scr_ArrayRemoveContents
+
+14:48   - Created obj_EquipSlot to hold equipment in room_Test
+
+15:49   - scr_InventoryAdd now accepts arguments
+            - Allows ItemDB entries to be added mulitple ways
+            - room_Order now features a "click-to-add" system
+            
+15:55   - scr_CLICKNDRAG now accepts arguments
+            - obj_IngredientParent and obj_EquipParent now only drag in room_Test
