@@ -8,14 +8,14 @@ ingPosition = 0;
 anObject = other.object_index;  // Define variable and set to index of item //instance_id;
 
 // Scan the ItemDB
-for(i = 0; i <= array_length_1d(stuff); i++)
+for(i = 0; i <= array_length_1d(ItemDB); i++)
 {
-    if(anObject == stuff[i,3])
+    if(anObject == ItemDB[i,3])
     {   
         // Scan each ingredient in the recipe for a match to the current item
         for(j = 0; j < numIngredient; j++)
         {
-            if(myIngredients[j] == stuff[i,0])
+            if(myIngredients[j] == ItemDB[i,0])
             {
                 ingPosition = j                
                 // detroy the currently held object

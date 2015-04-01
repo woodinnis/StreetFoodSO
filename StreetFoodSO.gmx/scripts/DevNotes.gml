@@ -239,3 +239,11 @@ GitHub software has been installed and will have to suffice for now.
 10:42   - Made obj_Inventory a persistent object and placed it in room_Test
             - Room Start Event turns visibility off in room_Menu
         - Removed obj_Player from room_Test
+        
+11:24   - Renamed global array "stuff" to "ItemDB" for clarity
+            - Replaced all code instances of "stuff"
+            
+11:34   - Created spr_Fryer, spr_Griddle
+        - Created obj_Fryer, obj_Griddle
+        - Added entries for Fryer and Griddle to ItemDB
+        - Created EQUIPMENT constant

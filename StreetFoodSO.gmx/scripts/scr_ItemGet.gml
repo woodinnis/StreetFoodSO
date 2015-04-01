@@ -17,24 +17,26 @@ if(inventory[item,0] != "")
     if(inventory[item,1] > 0)
     {
         me = inventory[item,0];
-        spawnX = room_width/2;
-        spawnY = room_height/2;
+        show_debug_message(me);
+        spawnWidth = sprite_get_width(object_get_sprite(me));
         spawnHeight = sprite_get_height(object_get_sprite(me));
+        spawnX = x + (sprite_get_width(object_get_sprite(me)) + 64);
+        spawnY = y + (sprite_get_height(object_get_sprite(me)) + 64);
         
         // Check to see if the new object is spawning on top of an existing one
         while(!position_empty(spawnX, spawnY))
         {
-            spawnX++;
-            spawnY++;
+            spawnX += (spawnWidth + 16);
+            //spawnY++;
         }
         
         // Check what is currently being stored in this position
-        for(i = 0; i < array_height_2d(stuff); i++)
+        for(i = 0; i < array_height_2d(ItemDB); i++)
         {
-            if(me == stuff[i,0])
+            if(me == ItemDB[i,0])
             {
                 // Create an instance of the object stored in inventory
-                instance_create(spawnX,spawnY,stuff[i,3]);
+                instance_create(spawnX,spawnY,ItemDB[i,3]);
             }
         }
         // Reduce the count

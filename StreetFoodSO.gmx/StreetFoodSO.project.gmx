@@ -6,8 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_Test</sprite>
-    <sprite>sprites\spr_BtnTest</sprite>
     <sprites name="INGREDIENTS">
       <sprite>sprites\spr_Toast</sprite>
       <sprite>sprites\spr_Tomato</sprite>
@@ -15,6 +13,12 @@
       <sprite>sprites\spr_Bacon</sprite>
       <sprite>sprites\spr_Mayo</sprite>
     </sprites>
+    <sprites name="EQUIPMENT">
+      <sprite>sprites\spr_Fryer</sprite>
+      <sprite>sprites\spr_Griddle</sprite>
+    </sprites>
+    <sprite>sprites\spr_Test</sprite>
+    <sprite>sprites\spr_BtnTest</sprite>
     <sprite>sprites\spr_Counter</sprite>
     <sprite>sprites\spr_Dish</sprite>
   </sprites>
@@ -75,8 +79,12 @@
       <object>objects\obj_Mayo</object>
       <object>objects\obj_Test</object>
     </objects>
-    <object>objects\obj_Player</object>
+    <objects name="EQUIPMENT">
+      <object>objects\obj_Fryer</object>
+      <object>objects\obj_Griddle</object>
+    </objects>
     <object>objects\obj_Inventory</object>
+    <object>objects\obj_Player</object>
     <object>objects\obj_Counter</object>
     <object>objects\obj_Dish</object>
   </objects>
@@ -85,8 +93,9 @@
     <room>rooms\room_Test</room>
     <room>rooms\room_Order</room>
   </rooms>
-  <constants number="1">
+  <constants number="2">
     <constant name="INGREDIENT">0</constant>
+    <constant name="EQUIPMENT">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
