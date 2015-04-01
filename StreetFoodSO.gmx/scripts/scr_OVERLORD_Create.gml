@@ -2,8 +2,6 @@
 
 debug = false;  // Setting Debug mode on or off
 
-isDish = false; // Has a dish been created
-
 globalvar Level;
 globalvar Cash;
 globalvar Fame;

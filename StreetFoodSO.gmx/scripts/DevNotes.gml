@@ -211,3 +211,18 @@ GitHub software has been installed and will have to suffice for now.
 
 16:46   - scr_RecipeBuild Collision Event now removes any collected ingredients from the ingredient list
             - Similar to scr_ItemGet, the Ingredient list will scroll up as ingredients are collected
+            
+//    Begin Notes for April 1, 2015    //
+
+09:34   - Did some basic code clean up in scr_DishGenerate, scr_OVERLORD_Create, obj_Dish Draw Event
+            - Unused variables
+            - Unneccessary Globals
+            
+09:57   - Code Clean up in scr_ItemCreate
+            - Unneeded debug_messages
+            
+10:09   - scr_ItemCreate now spawns items side-by-side instead of at a descending angle
+        - Created room_Order
+        - Created obj_BtnOrder
+        - Placed obj_BtnOrder in room_Test
+        - Placed obj_Player in room_Order

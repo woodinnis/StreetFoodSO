@@ -32,7 +32,6 @@ for(i = 0; i <= array_length_1d(stuff); i++)
                 // Replace the unused position with an empty string
                 if(i + 1 < numIngredient)
                 {
-                    show_debug_message("Like A MOFO!");
                     myIngredients[i] = myIngredients[i + 1];
                     myIngredients[i + 1] = "";
                 }
