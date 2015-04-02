@@ -32,11 +32,11 @@
       <script>scripts\scr_OVERLORD_Create.gml</script>
       <script>scripts\scr_DEBUG.gml</script>
       <script>scripts\scr_RecipeDB.gml</script>
-      <scripts name="Timer">
-        <script>scripts\scr_TimerAlarm.gml</script>
-        <script>scripts\scr_TimerCreate.gml</script>
-        <script>scripts\scr_TimerDraw.gml</script>
-      </scripts>
+    </scripts>
+    <scripts name="TIMER">
+      <script>scripts\scr_TimerAlarm.gml</script>
+      <script>scripts\scr_TimerCreate.gml</script>
+      <script>scripts\scr_TimerDraw.gml</script>
     </scripts>
     <scripts name="UI">
       <script>scripts\scr_CLICKNDRAG.gml</script>
@@ -95,6 +95,7 @@
     <object>objects\obj_Player</object>
     <object>objects\obj_Counter</object>
     <object>objects\obj_Dish</object>
+    <object>objects\obj_Timer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_Menu</room>

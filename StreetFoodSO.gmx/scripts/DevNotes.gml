@@ -287,3 +287,7 @@ GitHub software has been installed and will have to suffice for now.
             - Upon reaching 0 sends player to room_Order
             - Currently hard-coded to 1 min 20 sec
             - Currently part of obj_OVERLORD, may be better off as it's own object
+            
+15:54   - Created obj_Timer
+            - Transferred all Timer Events and code from obj_OVERLORD
+
