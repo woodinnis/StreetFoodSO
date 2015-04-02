@@ -280,3 +280,5 @@ GitHub software has been installed and will have to suffice for now.
 
 10:52   - Adding items to inventory now deducts their value (ItemDB[n,2]) from Cash
         - No items can be added to inventory once Cash reaches 0
+        
+11:25   - Completing a Dish now rewards players with a Cash value based on the number of ingredients in the dish
