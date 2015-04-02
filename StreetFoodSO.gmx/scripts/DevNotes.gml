@@ -282,3 +282,8 @@ GitHub software has been installed and will have to suffice for now.
         - No items can be added to inventory once Cash reaches 0
         
 11:25   - Completing a Dish now rewards players with a Cash value based on the number of ingredients in the dish
+
+12:04   - Created a countdown timer for room_Test
+            - Upon reaching 0 sends player to room_Order
+            - Currently hard-coded to 1 min 20 sec
+            - Currently part of obj_OVERLORD, may be better off as it's own object

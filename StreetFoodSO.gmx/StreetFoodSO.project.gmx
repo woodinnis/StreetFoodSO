@@ -32,6 +32,11 @@
       <script>scripts\scr_OVERLORD_Create.gml</script>
       <script>scripts\scr_DEBUG.gml</script>
       <script>scripts\scr_RecipeDB.gml</script>
+      <scripts name="Timer">
+        <script>scripts\scr_TimerAlarm.gml</script>
+        <script>scripts\scr_TimerCreate.gml</script>
+        <script>scripts\scr_TimerDraw.gml</script>
+      </scripts>
     </scripts>
     <scripts name="UI">
       <script>scripts\scr_CLICKNDRAG.gml</script>

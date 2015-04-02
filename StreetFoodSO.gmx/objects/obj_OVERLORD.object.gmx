@@ -129,6 +129,88 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_TimerCreate</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_TimerAlarm</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="8" enumb="0">
       <action>
@@ -193,11 +275,56 @@
 if(room != room_Menu)
 {    
     draw_set_halign(fa_center);
+
+    // Draw Cash
+    draw_text(x + 64,y + 16, "CASH");
+    draw_text(x + 64,y + 32, "$" + string(Cash));
     
-    draw_text(x + 64,y + 32, Cash);
+    // Draw Fame
+    draw_text(room_width - 128,y + 16, "FAME");
     draw_text(room_width - 128,y + 32, Fame);
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_TimerDraw</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
