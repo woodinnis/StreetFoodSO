@@ -7,8 +7,11 @@ anObject = argument0;
 for(i = 0; i < array_height_2d(ItemDB); i++)
 {
     // Verify the object has a valid entry in the ItemDB, and place it in inventory
-    if(anObject == ItemDB[i,3])
+    if(anObject == ItemDB[i,3] && Cash > 0)
     {
+        // Deduct the item's value from Cash
+        Cash -= ItemDB[i,2];
+        
         // Check the type of item being entered and perform actions accordingly
         switch(ItemDB[i,1])
         {

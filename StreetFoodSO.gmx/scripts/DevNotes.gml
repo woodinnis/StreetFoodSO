@@ -273,3 +273,10 @@ GitHub software has been installed and will have to suffice for now.
             
 16:24   - scr_InventoryAdd now checks ItemDB for item type before adding to inventory
             - A limit of 4 pieces of EQUIPMENT has been put in place
+            
+//    Begin Notes for April 2, 2015    //
+
+10:25   - cash and fame variables now appear in all rooms except room_Menu
+
+10:52   - Adding items to inventory now deducts their value (ItemDB[n,2]) from Cash
+        - No items can be added to inventory once Cash reaches 0

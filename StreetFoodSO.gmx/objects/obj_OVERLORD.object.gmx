@@ -190,7 +190,7 @@
             <string>// Draw player information on screen
 //draw_self();
 
-if(room == room_Test)
+if(room != room_Menu)
 {    
     draw_set_halign(fa_center);
     
