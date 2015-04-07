@@ -2,11 +2,13 @@
 
 globalvar RecipeDB;   // Declare RecipeDB as a global array
 
-// Recipes have up to 4 ingredients (at this time)
+// Recipes must have a minimum of 2 ingredients
+//
 // Recipes are entered in the following format:
 // Name
 // Ingredient 1 - required
 // Ingredient 2 - required
+// Ingredient + - Optional
 
 RecipeDB[0,0] = "Tomato & Toast";
 RecipeDB[0,1] = "Toast";

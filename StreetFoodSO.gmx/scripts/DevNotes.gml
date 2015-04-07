@@ -308,3 +308,12 @@ Showed prototype to Jason last night.
             - This allows numIngredient to accurately reflect the number of ingredients in a recipe
             - numIngredient can now serve multiple purposes in script
             - Recipes can now be much longer
+
+11:42   - Added an entry to the RecipeDB to test new size limits
+            - Five ingredient recipes are working just fine.
+            
+11:58   - Added new image_index for spr_Toast and spr_Bacon
+            - Shows a "raw" state
+        - Added Collision Event to obj_Toast and obj_Bacon
+            - Collision with obj_Griddle changes image_index to 1
+            - Shows a "cooked" state
