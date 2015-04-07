@@ -7,19 +7,21 @@ globalvar RecipeDB;   // Declare RecipeDB as a global array
 // Name
 // Ingredient 1 - required
 // Ingredient 2 - required
-// Ingredient 3 - Optional
-// Ingredient 4 - Optional
-//
-// All fields must have an entry. But optional entries may be left blank ("")
 
 RecipeDB[0,0] = "Tomato & Toast";
 RecipeDB[0,1] = "Toast";
 RecipeDB[0,2] = "Tomato";
-RecipeDB[0,3] = "";
-RecipeDB[0,4] = "";
+
 
 RecipeDB[1,0] = "BLT";
 RecipeDB[1,1] = "Toast";
 RecipeDB[1,2] = "Bacon";
 RecipeDB[1,3] = "Lettuce";
 RecipeDB[1,4] = "Tomato";
+
+RecipeDB[2,0] = "Tuna Sandwich";
+RecipeDB[2,1] = "Tuna";
+RecipeDB[2,2] = "Mayonnaise";
+RecipeDB[2,3] = "Cheese";
+RecipeDB[2,4] = "Toast";
+RecipeDB[2,5] = "Tomato";

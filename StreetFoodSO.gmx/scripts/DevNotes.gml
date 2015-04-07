@@ -290,4 +290,21 @@ GitHub software has been installed and will have to suffice for now.
             
 15:54   - Created obj_Timer
             - Transferred all Timer Events and code from obj_OVERLORD
+            
+//    Begin Notes for April 7, 2015    //
 
+Showed prototype to Jason last night.
+    - Escalation needs improvement
+    - Suggests I review/play other games that use the food/cooking theme
+    - Still isn't 100% clear on what's "fun" about the game
+    
+11:06   - Minor adjustments to comments in scr_OVERLORD_create
+
+11:33   - Removed the variable ingredientCount from code
+            - scr_DishIngredients
+            - obj_Dish Step event
+            - Substituted with numIngredient
+        - Arrays in the RecipeDB no longer need to have all fields filled out
+            - This allows numIngredient to accurately reflect the number of ingredients in a recipe
+            - numIngredient can now serve multiple purposes in script
+            - Recipes can now be much longer

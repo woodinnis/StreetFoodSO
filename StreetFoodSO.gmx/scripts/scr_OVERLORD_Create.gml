@@ -6,6 +6,6 @@ globalvar Level;
 globalvar Cash;
 globalvar Fame;
 
-Level = 1;      // Set Player level
-Cash = 500;
-Fame = 25;
+Level = 1;      // Set Player starting level
+Cash = 500;     // Set Player starting Cash
+Fame = 25;      // Set Player starting Fame

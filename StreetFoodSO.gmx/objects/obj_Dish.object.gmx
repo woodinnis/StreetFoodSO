@@ -133,7 +133,7 @@ Cash += dishPrice;
             <kind>1</kind>
             <string>// Destroy the object when no more ingredients are needed to complete it
 
-for(i = 0; i &lt; ingredientCount; i++)
+for(i = 0; i &lt; numIngredient; i++)
 {
     if(myIngredients[i,0] != "")
     {
@@ -144,7 +144,6 @@ for(i = 0; i &lt; ingredientCount; i++)
         instance_destroy();
     }
 }
-
 </string>
           </argument>
         </arguments>

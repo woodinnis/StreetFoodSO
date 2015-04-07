@@ -12,11 +12,11 @@ for(i = 1; i < numIngredient; i++)
     {
         myIngredients[j,0] = RecipeDB[pos,i];
         myIngredients[j,1] = 1;
-        ingredientCount = i;    // Set the number of necessary ingredients to i;
+        dishPrice = i * 10;
     }
     else
         break;
 }
 
 // Set Price of dish based on ingredient count (should probably be changed in future)
-dishPrice = ingredientCount * 10;
+show_debug_message(dishPrice);
