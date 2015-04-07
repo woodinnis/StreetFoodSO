@@ -55,11 +55,11 @@
       <script>scripts\scr_InventoryAdd.gml</script>
       <script>scripts\scr_ItemGet.gml</script>
       <script>scripts\scr_InventoryDraw.gml</script>
-      <script>scripts\scr_IngredientCooked.gml</script>
     </scripts>
     <scripts name="DISH">
       <script>scripts\scr_DishIngredients.gml</script>
       <script>scripts\scr_RecipeBuild.gml</script>
+      <script>scripts\scr_IngredientCooked.gml</script>
       <script>scripts\scr_DishGenerate.gml</script>
     </scripts>
     <scripts name="COUNTER">

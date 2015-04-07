@@ -317,3 +317,9 @@ Showed prototype to Jason last night.
         - Added Collision Event to obj_Toast and obj_Bacon
             - Collision with obj_Griddle changes image_index to 1
             - Shows a "cooked" state
+            
+12:23   - Trying to build new conditions into scr_RecipeBuild to only accept "cooked" ingredients
+            - Will likely require a considerable amount of code refactoring, and breaking off functions
+        - Tried building "Cooked" objects to test conditions.
+            - Could work, but might require more effort than it's worth
+        - Should think about using a Macros, RAW, COOKED, as states.
