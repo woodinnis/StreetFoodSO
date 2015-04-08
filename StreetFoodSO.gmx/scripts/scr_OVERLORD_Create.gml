@@ -6,7 +6,7 @@ globalvar Level;
 globalvar Cash;
 globalvar Fame;
 
-globalvar RecipeDB2;    // Test variable for creating a ds_list or array to hold DB keys
+//globalvar RecipeDB2;    // Test variable for creating a ds_list or array to hold DB keys
 
 //RecipeDB2 = ds_list_create();
 

@@ -335,3 +335,7 @@ Showed prototype to Jason last night.
             - scr_RecipeBD_new has been attached to the Create Event of obj_OVERLORD
             - More reading and testing is needed
 
+14:37   - Removed all current ds_list and ds_grid RecipeDB tests currently in progress
+        - scr_RecipeDB_new no longer attached to Create Event of obj_OVERLORD
+        - This implementation of the RecipeDB would be interesting and allow for more detail, however focussing on it now will slow development
+            - All new scripts remain intact, and much of the new code is commented out. When gameplay is functional this can be revisted
