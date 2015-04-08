@@ -32,6 +32,7 @@
       <script>scripts\scr_OVERLORD_Create.gml</script>
       <script>scripts\scr_DEBUG.gml</script>
       <script>scripts\scr_RecipeDB.gml</script>
+      <script>scripts\scr_RecipeDB_new.gml</script>
     </scripts>
     <scripts name="TIMER">
       <script>scripts\scr_TimerAlarm.gml</script>
@@ -103,9 +104,11 @@
     <room>rooms\room_Test</room>
     <room>rooms\room_Order</room>
   </rooms>
-  <constants number="2">
+  <constants number="4">
     <constant name="INGREDIENT">0</constant>
     <constant name="EQUIPMENT">1</constant>
+    <constant name="RAW">0</constant>
+    <constant name="COOKED">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

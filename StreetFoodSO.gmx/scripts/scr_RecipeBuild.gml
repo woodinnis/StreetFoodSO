@@ -16,7 +16,7 @@ for(i = 0; i <= array_length_1d(ItemDB); i++)
         for(j = 0; j < numIngredient; j++)
         {
             if(myIngredients[j,0] == ItemDB[i,0])
-            {
+            {                
                 ingPosition = j                
                 // detroy the currently held object
                 with(other)

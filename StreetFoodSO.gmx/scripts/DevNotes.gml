@@ -323,3 +323,15 @@ Showed prototype to Jason last night.
         - Tried building "Cooked" objects to test conditions.
             - Could work, but might require more effort than it's worth
         - Should think about using a Macros, RAW, COOKED, as states.
+        
+//    Begin Notes for April 7, 2015    //
+
+9:19    - Removed debug message from scr_ArrayRemoveContents
+            - Was causing a flood in the compile message window
+            
+12:13   - After a lot of reading tried to create a more detailed RecipeDB (RecipeDB2)
+            - A ds_list would contain recipe names, linking to a ds_grid containg all recipe details
+            - scr_RecipeDB_new has been created to test this
+            - scr_RecipeBD_new has been attached to the Create Event of obj_OVERLORD
+            - More reading and testing is needed
+

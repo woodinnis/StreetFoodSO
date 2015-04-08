@@ -9,7 +9,6 @@ if(arrayName[@arrayPosition,1] == 0)
     {
         if(i + 1 < array_height_2d(arrayName))
         {
-            show_debug_message("Like A MOFO!");
             arrayName[@i,0] = arrayName[@i + 1,0];
             arrayName[@i,1] = arrayName[@i + 1,1];
             arrayName[@i + 1,0] = "";
