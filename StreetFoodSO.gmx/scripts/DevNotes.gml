@@ -345,3 +345,12 @@ Showed prototype to Jason last night.
 10:32   - Begin working to make Inventory more direct access
             - Want to show each available item on screen
             - Want to make each item clickable or dragable individually
+            
+10:57   - Created scr_ArrayItemSpawn
+            - Replaces the long conditional section in scr_ItemGet which spawned items
+            - Will allow for more precise, and modular item generation
+            - Accepts two arguments (Array Name, Array Position)
+
+11:59   - Created scr_ItemGet_new
+            - Will adapt this to handle new inventory retrieval functions
+            - Copied from scr_ItemPickup

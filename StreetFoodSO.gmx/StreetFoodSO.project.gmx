@@ -52,6 +52,7 @@
     </scripts>
     <scripts name="INVENTORY">
       <script>scripts\scr_ItemPickup.gml</script>
+      <script>scripts\scr_ItemGet_new.gml</script>
       <script>scripts\scr_InventoryCreate.gml</script>
       <script>scripts\scr_InventoryAdd.gml</script>
       <script>scripts\scr_ItemGet.gml</script>
@@ -68,6 +69,7 @@
     </scripts>
     <script>scripts\scr_ArrayRemoveContents.gml</script>
     <script>scripts\scr_ArrayItemSpawn.gml</script>
+    <script>scripts\script26.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_Test</font>
