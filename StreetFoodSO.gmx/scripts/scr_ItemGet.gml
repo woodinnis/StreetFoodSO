@@ -6,7 +6,7 @@ checkCount = 0;
 // Check for an entry 
 do
 {
-    item = floor(random(array_height_2d(inventory)));
+    item = irandom(array_height_2d(inventory)-1);
     checkCount++;   // Avoids an endless loop when clicking an empty inventory
 }until(inventory[item,0] != "" || checkCount > array_height_2d(inventory))
 
@@ -16,6 +16,10 @@ if(inventory[item,0] != "")
     // Check for a valid count of items
     if(inventory[item,1] > 0)
     {
+    
+        scr_ArrayItemSpawn(inventory,item);
+    
+        /*
         me = inventory[item,0];
         show_debug_message(me);
         spawnWidth = sprite_get_width(object_get_sprite(me));
@@ -39,6 +43,7 @@ if(inventory[item,0] != "")
                 instance_create(spawnX,spawnY,ItemDB[i,3]);
             }
         }
+        */
         // Reduce the count
         inventory[item,1]--;
     }

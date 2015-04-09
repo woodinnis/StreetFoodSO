@@ -324,7 +324,7 @@ Showed prototype to Jason last night.
             - Could work, but might require more effort than it's worth
         - Should think about using a Macros, RAW, COOKED, as states.
         
-//    Begin Notes for April 7, 2015    //
+//    Begin Notes for April 8, 2015    //
 
 9:19    - Removed debug message from scr_ArrayRemoveContents
             - Was causing a flood in the compile message window
@@ -339,3 +339,9 @@ Showed prototype to Jason last night.
         - scr_RecipeDB_new no longer attached to Create Event of obj_OVERLORD
         - This implementation of the RecipeDB would be interesting and allow for more detail, however focussing on it now will slow development
             - All new scripts remain intact, and much of the new code is commented out. When gameplay is functional this can be revisted
+            
+//    Begin Notes for April 9, 2015    //
+
+10:32   - Begin working to make Inventory more direct access
+            - Want to show each available item on screen
+            - Want to make each item clickable or dragable individually
