@@ -61,7 +61,6 @@
     <scripts name="DISH">
       <script>scripts\scr_DishIngredients.gml</script>
       <script>scripts\scr_RecipeBuild.gml</script>
-      <script>scripts\scr_IngredientCooked.gml</script>
       <script>scripts\scr_DishGenerate.gml</script>
     </scripts>
     <scripts name="COUNTER">
@@ -69,7 +68,12 @@
     </scripts>
     <script>scripts\scr_ArrayRemoveContents.gml</script>
     <script>scripts\scr_ArrayItemSpawn.gml</script>
-    <script>scripts\script26.gml</script>
+    <scripts name="INGREDIENTS">
+      <script>scripts\scr_IngredientCreate.gml</script>
+      <script>scripts\scr_IngredientCooked.gml</script>
+      <script>scripts\scr_IngredientAlarm0.gml</script>
+      <script>scripts\scr_IngredientCollideEquip.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_Test</font>
