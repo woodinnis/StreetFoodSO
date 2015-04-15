@@ -354,3 +354,21 @@ Showed prototype to Jason last night.
 11:59   - Created scr_ItemGet_new
             - Will adapt this to handle new inventory retrieval functions
             - Copied from scr_ItemPickup
+            
+//    Begin Notes for April 10, 2015    //
+
+10:12   - Cunsulted with Jason Elliot last night and will be re-building the recipe system
+
+//    Begin Notes for April 15, 2015    //
+
+12:01   - Have spent all morning working on implementation of a "cooked" variable for obj_IngredientParent
+            - An int that scales from 0 - 10 (raw to burnt)
+            - As a parent variable it is inherited by all ingredient child objects
+        - Attempts to use Collision Events to increment the cooked variable have had mixed results
+            - The correct collision check function hasn't been identified. (Tried place_meeting, position_meeting, collision_rectangle)
+            - Use of a Collision Event vs a Step Event is still uncertain. Collision checking does not seem to occur on each tick with Collision Event.
+            - scr_IngredientAlarm0 seems to work 50% of the time. But I'm not certain if Alarm0 needs to be reset in the script or not
+
+15:00   - The "cooked" variable in obj_IngredientParent now controls the level of doneness in all ingredients
+            - A boolean was needed to indicate collision had occurred between obj_IngredientParent and obj_EquipParent
+            - Sub-images for varying levels of doneness should be set
