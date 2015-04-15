@@ -372,3 +372,9 @@ Showed prototype to Jason last night.
 15:00   - The "cooked" variable in obj_IngredientParent now controls the level of doneness in all ingredients
             - A boolean was needed to indicate collision had occurred between obj_IngredientParent and obj_EquipParent
             - Sub-images for varying levels of doneness should be set
+            
+16:23   - Created obj_ProgBar to act as visual feedback for multiple purposes
+            - Ingredients cooking
+            - Dishes being prepared
+            - Customers waiting
+        - scr_ProgBarDraw draws a gradiated rectangle at x,y

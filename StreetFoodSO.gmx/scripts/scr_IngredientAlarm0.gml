@@ -6,6 +6,9 @@ equipCollided = false;
 // If the cooked variable is less than 10 increment by 1 and reset Alarm[0]
 if(cooked < 10)
 {
+    if(cooked == 0)
+        instance_create(x - 16, y - 24, obj_ProgBar);
+        
     if(place_meeting(x,y,obj_EquipParent))
     {
         cooked++;
